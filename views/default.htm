@@ -1,0 +1,8 @@
+[{
+    "user_agent": "prefetch-proxy",
+    {% if is_activated %}
+        "fraction": {{ fraction|number_format(1, '.') }}
+    {% else %}
+        "disallow": true
+    {% endif %}
+}]

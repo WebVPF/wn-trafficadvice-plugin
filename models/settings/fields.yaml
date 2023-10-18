@@ -1,0 +1,27 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    settings_title:
+        type: section
+        label: webvpf.trafficadvice::lang.settings.title_label
+        comment: webvpf.trafficadvice::lang.settings.title_comment
+
+    is_activated:
+        type: switch
+        label: webvpf.trafficadvice::lang.settings.is_activated_label
+        default: true
+        comment: webvpf.trafficadvice::lang.settings.is_activated_comment
+        commentHtml: true
+
+    fraction:
+        type: number
+        label: webvpf.trafficadvice::lang.settings.fraction_label
+        comment: webvpf.trafficadvice::lang.settings.fraction_comment
+        default: 1
+        step: 0.1
+        min: 0
+        max: 1
+        span: auto
